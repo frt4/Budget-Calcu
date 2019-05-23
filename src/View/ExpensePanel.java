@@ -3,21 +3,30 @@ package View;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class ExpensePanel extends JPanel {
+    private JFrame mainWindow;
+    private InputPanel inputPanel;
+    private ButtonPanel buttonPanel;
 
-    private JButton addButton;
+    public ExpensePanel(JFrame mw){
+        this.mainWindow = mw;
 
-    public ExpensePanel(){
-        this.setLayout(new FlowLayout());
+        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         TitledBorder border = new TitledBorder("Expenses");
         this.setBorder(border);
 
-        addButton = new JButton("+");
+        inputPanel = new InputPanel();
+        this.add(inputPanel);
 
-        this.add(addButton);
+        buttonPanel = new ButtonPanel(inputPanel, mainWindow);
+
+        this.add(buttonPanel);
+
     }
 
 

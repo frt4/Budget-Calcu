@@ -21,7 +21,7 @@ public class MainWindow extends JFrame {
         incomePanel = new IncomePanel();
         this.add(incomePanel);
 
-        expensePanel = new ExpensePanel();
+        expensePanel = new ExpensePanel(this);
         this.add(expensePanel);
 
         this.pack();
