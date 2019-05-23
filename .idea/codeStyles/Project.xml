@@ -1,0 +1,8 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <codeStyleSettings language="JAVA">
+      <option name="INDENT_CASE_FROM_SWITCH" value="false" />
+      <option name="CASE_STATEMENT_ON_NEW_LINE" value="false" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
